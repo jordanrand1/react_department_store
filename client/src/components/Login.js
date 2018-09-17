@@ -3,11 +3,11 @@ import { login } from '../fakeAuth'
 
 const Login = ({history}) => (
   <Fragment>
-    <h3>:ogin</h3>
+    <h3>Login</h3>
     <button
       onClick={ () => {
         login()
-        history.replaceState('/dashboard')
+        history.replace('/dashboard')
       }}>
       Login
     </button>
